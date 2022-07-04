@@ -21,5 +21,5 @@ if __name__ == '__main__':
             # READLINE FROM ARDUINO
             line = ser.readline().decode('utf-8').rstrip()
             print(line)
-            append_new_line('dataset_standstill.txt', line)
+            append_new_line('standstill.txt', line)
             time.sleep(0.01)
