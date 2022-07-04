@@ -31,4 +31,6 @@ if __name__ == '__main__':
                 line = ser.readline().decode('utf-8').rstrip()
                 append_new_line(name_txt, line)
             except:
-                print('exit code, keluar huhu')
+                print('problem with serial readline')
+        print('error or stop occured')
+        break
