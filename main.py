@@ -33,4 +33,4 @@ if __name__ == '__main__':
                 time.sleep(0.01)
             except:
                 print('problem with serial readline')
-        print('error or stop occured')
+                break
