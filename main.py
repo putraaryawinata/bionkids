@@ -25,12 +25,9 @@ if __name__ == '__main__':
     name_txt = 'dataset.txt'
 
     while True:
+        print('masuk loop')
         if ser.in_waiting > 0:
             # READLINE FROM ARDUINO
-            try:
-                line = ser.readline().decode('utf-8').rstrip()
-                append_new_line(name_txt, line)
-                time.sleep(0.01)
-            except:
-                print('problem with serial readline')
-                break
+            line = ser.readline().decode('utf-8').rstrip()
+            append_new_line(name_txt, line)
+            time.sleep(0.01)
